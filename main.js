@@ -1,4 +1,7 @@
 import './style.css';
+import moonjpg from './src/moon.jpg';
+import normaljpg from './src/normal.jpg';
+import spacejpg from './src/space.jpg';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
@@ -21,57 +24,57 @@ renderer.render(scene, camera);
 
 // Octahedron
 
-function addBiggerOctahedron2() {
-  const geometry = new THREE.OctahedronGeometry(6.5);
-  const material = new THREE.MeshStandardMaterial({ color: 0x0000FF });
-  const octahedron = new THREE.Mesh(geometry, material);
+// function addBiggerOctahedron2() {
+//   const geometry = new THREE.OctahedronGeometry(6.5);
+//   const material = new THREE.MeshStandardMaterial({ color: 0x0000FF });
+//   const octahedron = new THREE.Mesh(geometry, material);
 
-  const [x, y, z] = Array(3)
-    .fill()
-    .map(() => THREE.MathUtils.randFloatSpread(20));
+//   const [x, y, z] = Array(3)
+//     .fill()
+//     .map(() => THREE.MathUtils.randFloatSpread(20));
 
-  octahedron.position.set(19, y, z);
-  scene.add(octahedron);
+//   octahedron.position.set(19, y, z);
+//   scene.add(octahedron);
 
-  function animate() {
-    requestAnimationFrame(animate);
+//   function animate() {
+//     requestAnimationFrame(animate);
   
-    octahedron.rotation.x += 0.01;
-    octahedron.rotation.y += 0.005;
-    octahedron.rotation.z += 0.01;
+//     // octahedron.rotation.x += 0.01;
+//     // octahedron.rotation.y += 0.005;
+//     // octahedron.rotation.z += 0.01;
   
-    renderer.render(scene, camera);
-  }
-  animate()
-}
+//     renderer.render(scene, camera);
+//   }
+//   animate()
+// }
 
-Array(1).fill().forEach(addBiggerOctahedron2);
+// Array(1).fill().forEach(addBiggerOctahedron2);
 
-function addBiggerOctahedron() {
-  const geometry = new THREE.OctahedronGeometry(6.5);
-  const material = new THREE.MeshStandardMaterial({ color: 0x00FFFF });
-  const octahedron = new THREE.Mesh(geometry, material);
+// function addBiggerOctahedron() {
+//   const geometry = new THREE.OctahedronGeometry(6.5);
+//   const material = new THREE.MeshStandardMaterial({ color: 0x00FFFF });
+//   const octahedron = new THREE.Mesh(geometry, material);
 
-  const [x, y, z] = Array(3)
-    .fill()
-    .map(() => THREE.MathUtils.randFloatSpread(20));
+//   const [x, y, z] = Array(3)
+//     .fill()
+//     .map(() => THREE.MathUtils.randFloatSpread(20));
 
-  octahedron.position.set(-20, y, z);
-  scene.add(octahedron);
+//   octahedron.position.set(-20, y, z);
+//   scene.add(octahedron);
 
-  function animate() {
-    requestAnimationFrame(animate);
+//   function animate() {
+//     requestAnimationFrame(animate);
   
-    octahedron.rotation.x += 0.01;
-    octahedron.rotation.y += 0.005;
-    octahedron.rotation.z += 0.01;
+//     // octahedron.rotation.x += 0.01;
+//     // octahedron.rotation.y += 0.005;
+//     // octahedron.rotation.z += 0.01;
   
-    renderer.render(scene, camera);
-  }
-  animate()
-}
+//     renderer.render(scene, camera);
+//   }
+//   animate()
+// }
 
-Array(1).fill().forEach(addBiggerOctahedron);
+// Array(1).fill().forEach(addBiggerOctahedron);
 
 // const geometry = new THREE.OctahedronGeometry(1.5);
 // const material = new THREE.MeshBasicMaterial({ color: 0x0000FF });
@@ -111,17 +114,17 @@ function addOctahedron() {
   scene.add(star);
 }
 
-Array(200).fill().forEach(addOctahedron);
+Array(10).fill().forEach(addOctahedron);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load('./src/space.jpg');
+const spaceTexture = new THREE.TextureLoader().load(spacejpg);
 scene.background = spaceTexture;
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load('./src/moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('./src/normal.jpg');
+const moonTexture = new THREE.TextureLoader().load(moonjpg);
+const normalTexture = new THREE.TextureLoader().load(normaljpg);
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
@@ -158,6 +161,7 @@ moveCamera();
 function animate() {
   requestAnimationFrame(animate);
 
+  // This makes the moon rotate
   moon.rotation.x += 0.005;
 
   // controls.update();
