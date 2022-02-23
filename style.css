@@ -18,6 +18,7 @@ canvas {
 
 :root a {
   text-decoration: none;
+  font-style: italic;
 }
 
 
@@ -77,7 +78,7 @@ canvas {
 
   blockquote {
     margin: 5px;
-    padding: 0;
+    padding: 10px;
     grid-column: 2 / span 9;
     margin-bottom: var(--spacing);
     border-radius: 10px;
