@@ -1,9 +1,5 @@
-import './style.css';
-import moonjpg from './src/moon.jpg';
-import normaljpg from './src/normal.jpg';
-import spacejpg from './src/space.jpg';
-import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+
+import * as THREE from './three.js';
 
 // Setup
 

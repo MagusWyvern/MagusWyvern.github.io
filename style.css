@@ -6,14 +6,18 @@ canvas {
   left: 0;
 }
 
+body {
+  background-color: #020024;
+}
 
 :root {
-  --dark-bg: rgba(54, 54, 54, 0.95);
-  --spacing: 350px;
+  --dark-bg: #19164b;
+  --spacing: 150px;
 
   font-family: brandon-grotesque, sans-serif;
-  font-weight: 400;
+  font-weight: 200;
   font-style: normal;
+  
 }
 
 :root a {
@@ -23,20 +27,22 @@ canvas {
 
 
 main {
-  width: 100vw;
+  width: 95vw;
   color: white;
   z-index: 99;
   position: absolute;
   width: 100%;
   margin: 0px auto;
-  padding: 120px 0px;
+  padding: 60px 0px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  animation-name: example;
+  animation-duration: 2s;
 }
 
 h1, h2, h3, blockquote {
   font-family: elevon, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -74,6 +80,7 @@ canvas {
     font-size: 1.25rem;
     line-height: 1.5;
     margin-bottom: var(--spacing);
+    border-radius: 10px;
   }
 
   blockquote {
@@ -96,3 +103,9 @@ canvas {
     grid-column: 6 / 12;
     border-radius: 10px;
   }
+
+  /* The animation code */
+@keyframes example {
+  0%   {opacity: 0%;}
+  100% {opacity: 100%;}
+}
