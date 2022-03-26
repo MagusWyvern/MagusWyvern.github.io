@@ -1,16 +1,10 @@
 {
   "name": "portfolio-netlify",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
-  },
-  "devDependencies": {
-    "vite": "^2.3.0"
+    "dev": "npx serve -s build"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.3",
-    "three": "^0.128.0"
+    "@fortawesome/fontawesome-free": "^5.15.3"
   }
 }

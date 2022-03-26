@@ -1,0 +1,111 @@
+@import url("https://use.typekit.net/jmk3xov.css");
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+body {
+  background-color: #020024;
+}
+
+:root {
+  --dark-bg: #19164b;
+  --spacing: 150px;
+
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  
+}
+
+:root a {
+  text-decoration: none;
+  font-style: italic;
+}
+
+
+main {
+  width: 95vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 60px 0px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  animation-name: example;
+  animation-duration: 2s;
+}
+
+h1, h2, h3, blockquote {
+  font-family: elevon, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pfp {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+
+  header {
+    background: var(--dark-bg);
+    grid-column: 2 / span 9;
+    font-size: 2.5rem;
+    padding: 2rem;
+    margin-bottom: var(--spacing);
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  section {
+    grid-column: 2 / 8;
+    padding: 1rem;
+    background: var(--dark-bg);
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: var(--spacing);
+    border-radius: 10px;
+  }
+
+  blockquote {
+    margin: 5px;
+    padding: 10px;
+    grid-column: 2 / span 9;
+    margin-bottom: var(--spacing);
+    border-radius: 10px;
+  }
+
+  blockquote p {
+    color: black;
+    background-color: white;
+    font-size: 4rem;
+    display: inline;
+    line-height: 1;
+  }
+
+  .left {
+    grid-column: 6 / 12;
+    border-radius: 10px;
+  }
+
+  /* The animation code */
+@keyframes example {
+  0%   {opacity: 0%;}
+  100% {opacity: 100%;}
+}
