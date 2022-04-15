@@ -7,7 +7,7 @@ canvas {
 }
 
 body {
-  background-color: #020024;
+  background-color: #020024 !important;
 }
 
 :root {
@@ -23,19 +23,37 @@ body {
 :root a {
   text-decoration: none;
   font-style: italic;
+  padding-right: 2px;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  text-align: center;
+}
+
+.column {
+  flex: 1;
+  padding: 0 var(--spacing);  
 }
 
 
 main {
-  width: 95vw;
+  width: 100%;
+
   color: white;
   z-index: 99;
   position: absolute;
-  width: 100%;
+
   margin: 0px auto;
   padding: 60px 0px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+
+  display: flex;
+  flex-direction: column;
+
+
   animation-name: example;
   animation-duration: 2s;
 }
@@ -55,26 +73,18 @@ h1, h2, h3, blockquote {
   margin-bottom: 20px;
 }
 
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
 
 
   header {
     background: var(--dark-bg);
-    grid-column: 2 / span 9;
-    font-size: 2.5rem;
-    padding: 2rem;
+    font-size: 1.5rem;
+    padding: 1rem;
     margin-bottom: var(--spacing);
     text-align: center;
     border-radius: 10px;
   }
 
   section {
-    grid-column: 2 / 8;
     padding: 1rem;
     background: var(--dark-bg);
     font-size: 1.25rem;
@@ -86,7 +96,6 @@ canvas {
   blockquote {
     margin: 5px;
     padding: 10px;
-    grid-column: 2 / span 9;
     margin-bottom: var(--spacing);
     border-radius: 10px;
   }
