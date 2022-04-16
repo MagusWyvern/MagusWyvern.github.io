@@ -12,10 +12,10 @@ body {
 
 :root {
   --dark-bg: #19164b;
-  --spacing: 150px;
+  --spacing: 75px;
 
   font-family: brandon-grotesque, sans-serif;
-  font-weight: 200;
+  font-weight: 100;
   font-style: normal;
   
 }
@@ -23,7 +23,8 @@ body {
 :root a {
   text-decoration: none;
   font-style: italic;
-  padding-right: 2px;
+  /* padding-right: 2px; */
+  color: #655fdb;
 }
 
 .columns {
@@ -37,6 +38,12 @@ body {
 .column {
   flex: 1;
   padding: 0 var(--spacing);  
+
+
+}
+
+.column img {
+  vertical-align: middle;
 }
 
 
@@ -48,7 +55,7 @@ main {
   position: absolute;
 
   margin: 0px auto;
-  padding: 60px 0px;
+  padding: 30px 0px;
 
   display: flex;
   flex-direction: column;
@@ -94,8 +101,8 @@ h1, h2, h3, blockquote {
   }
 
   blockquote {
-    margin: 5px;
-    padding: 10px;
+    /* margin: 5px; */
+    /* padding: 10px; */
     margin-bottom: var(--spacing);
     border-radius: 10px;
   }
@@ -103,7 +110,7 @@ h1, h2, h3, blockquote {
   blockquote p {
     color: black;
     background-color: white;
-    font-size: 4rem;
+    font-size: 2rem;
     display: inline;
     line-height: 1;
   }
