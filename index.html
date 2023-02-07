@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
   <title>Developer Portfolio - Scroll of Ice</title>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" referrerpolicy="no-referrer"></script>
@@ -22,7 +22,7 @@
 
 <body>
 
-  <main >
+  <main>
 
     <header>
 
@@ -32,16 +32,19 @@
             src="sdata:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBISEhISEhIYEhIYDxUfDxgYDxESEhAVJSEnJyUhJCQpLjwzKSw4LSQkNDo0OEY1Nzc3KDFITkg1PzxCNzUBDAwMEA8QGBARGD8dGh0xMT8/PzE0NDQxPzExPz80PzE/P0A0Pz8/NDQ/ND80MTE0MTExMT8xND8xMTExMTExMf/AABEIAMgAyAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAGAAIDBAUBBwj/xABCEAACAQIDBAcEBwYFBQEAAAABAgADEQQFIRIxQVEGEyJhcYGxcpGhwQcjMjPR4fAUJEJSYrI0c4Ki8VNjg5PCQ//EABkBAAIDAQAAAAAAAAAAAAAAAAABAgMEBf/EACMRAAIBAwQCAwEAAAAAAAAAAAABAgMRMQQSIUEiMlFhcTP/2gAMAwEAAhEDEQA/ACUZzb/8/wDf+Up5lmhqhaZp7Ou1fb2t2lt3fPHHzSud9Zz/AOR/xm90LxVR8S4eozjqG0Zy38SyVyyVSbTTY/MPvan+Y/rKpMtZiPrqg/7jesqGI2QfiiGoYeZK+hEA6hhtlJ7VuYjRdS7CGmZaQSkglujGWMmUSVLxix6wETUzLqCUaYl1G5xohIfacM7ecvGQGmMEeYwcYE0KIzsUBjY0x8aYANiM7OGBI4YojEIDOERRGKAHzbeEvQQ/vR/yH9RMPFUdSRNroH/jLf8AZf5So47wXc0+/q/5hlNjLucf4ir7ZlFozbD1RFUMM8tbUQKqGGWWnUQiX0ewlpmWqZlKm0s02kixltTJRIUMlWAianLi7pTpmcxWa4eiPraqIeRa7+4axorm0sl6IGDr9McEDbbYjmKb2/GaOAzzC17ClWRmO5SSjnyNjHwQU4vDNIxkeY0QJoaZ2IicMCQpwxThgBwxpEcY0mBJCinCZy8BiYxRpMUBnz7UBXQ6j4ibXQa37YP8t5l1xNToULYxPYf0lRxngtZ3/iKvtzPM0c9/xNX2/kJmtGbIeiIqkMsu3r4CBtSGOVn7HgIIvo5YQ05YpmVkMspJlxapmdxOLSkhqOdlQNTGoYG9Lcw26opg3VPtci5/VvfEVVZ7Y3GZt0mq1SVpk06fAKbO3iflB5348Z12kDGI5kpyk7tiqPIC5Ec0hcxCTCzo10yq0HWnWc1KBIB2iS9McwflPVEcMAykFSAVIIII5z58bfPQ/o86RklcHVN9D+zsTutqUPqPdykovo1UqnTPQzGmOjTJGpHDGkxMYxmgTR0mNLRpaMLRDsPLxhacJjC0Bj7xSItFGOx4dWmj0PNsZT9h/wC0zOrS/wBFmAxlPwf+0ylHEeC5nx/eavtD0EziZo56f3mp4r/aJmkyRsh6ojqQwyo6J7K+kDqhhflJ7NP2F9I0aKOWEdOWUlVDLFMxlxapmeb5yT+0V7/9d/7jPR0M8vzjEbWIqbOpas+yB3k2iZj1WEQsZwLPRMg6D0dhKmJLVHKglASlNO7mYW4bLaNIbNOkiD+lFEolXXRlVN9nhj0W4AnwVpVqoRvBHiCJ77iEHIe4TDzALrdQfISt6i3RNUvs8WLy9lOKNOtSdd61EI8jCnNclo1bnYCNzUbJgk+HahVVXNxtAqRxF5dCopD2OLufQEYxjwdLyJzNBtiMYyNzE7SJngWpDmeRl5Ezxu1AdiQtOFpGWnC0Bjy0UiLRQA89OaYL/oj/ANFOTYLHYV6lMUqYSpc2IpIuljfUQOBmjkjWr0z3t6GVnGlSSTZdzw/vFT/R/aJQcWJB3gy5nR+ufwX0EoGI0U/VEbwuyY9mn7C+kEXG/uhZkp7FP2FjWTTQywmQ7pZQysnDwk6GSNAK9JekVbD1DTp2Ate7KPhMnohhziMbTUi4A23PcPztIunjFcVYAkdWvPfrc+kt9A8Ji3NV6BCDYs5IG0xsbAHhwPkJVUfizm1ZNzs+j07H52KB2Ep9YR9q7BFX8ZVw3TSmTs1KbUzzBDrM3DYhqVCkyYbbLUkLsEVnZiLksTre8xKuYftFTZODK9q12pAHxmVJWwFrs9E/bqdQbSsCLTDzTMqNO5qMBB3EpiaPWJQKWVUJFRm7LkElAfDZOvOYqVesUVMS2yC1iBoAddPhFsvyO9jTxWf4VtAzDv2DaCXSSp20I1BXQ85t4utg7bNM+5g3qIO55uRdCBcqbWNuRl1OKT4CUnt5PWOi/TDD4tEQt1dYKAytbtnuPGEVRp5t9FGFUivUZbnshSVFhx0+E9FqTWnwaaV3FNkbmQuZIxkDGBehpnJwmcJjGIxpM6TGkwGK87G3nIAeVLl6cz7xLmAwCpURgTcHTdynFlrDHtL4yFjHOMdr4KGc/en2VlEmXc5P1g9geplAmRKKfqhrmFeSH6un7IgnUhTkZ+rp+zGsmmhlhTTMsoZUpndJ0MkaR2MyanilHWdkKlUlgBcaLb5x30eYQU6VSne5GIe5tqdBaX8sqoCUf7DAg+c0MDgVwzlFJKlARe2+5mStdNox1UlI7XyQKG6t3pgsTsjZZLnU6EG3gCJkUsp2XuKljzFMbQ8Lkj4QlxeOCISdABMvLqhqBqqgG1+rBO+VX+CuN7ck1PKETDuCNtmDFmaxZieJ/XpAQZcwqVKY2SCxKqwI2Sd9jY+60JM0zrFU6RWoqtUN7bAKrbzJg1gc2qu6dYgDBmuRci3nH+DivkbWydlBPVp5FAPT5QY6SYMLTLEANtKAATZRy+J989JxOKptTvYAka2gJnaddZF1u4koSdx7bqwSfRtRRMISrEsz3cHcvAW92+FrPKmT5cmGoU6SixCLtn+Zran3yZ5tWDVBWikcdpCxjmMhYxlh0mNJiJjSYxnSY28RMaTADpMUYTOxAAIpSWjTIZfaE0VojkJItFeUiUTj4sFs6+8HsD1Mz7zRzv7xfY+ZmbE8mKnhHHMJ8iP1dPw+cF2hLkTfV0/P1gsmmh7MKkOgk6GVKfCWEMkay0jSLLMwrJjXSq7PTen9Re1ktvA9590chkeNw5cKVNqiOGQ943jzFx5yFSO6JVUhuRvZq4emy8be+VMtTF002dhCn8B22BC94tI8JitogNoRvm/hzcWmBPkyPgwMwSs2pFJjbQbZ0gZmGIqoxXqgWvoUdWEPM1y6mWPbtffrBTHYenRJKm57zJbkTurFegStBjUNmuLC+6XOieXCo5rseyj2QWFmbf8ADSD5epXqLSp6sx8h3+AnouXYVaFJKa7lXU/zHiZfRhd7mTpxu7lxpBUMftSGq81GiwxjImMTGNYwJHCY28azxpaMB21GlowtI2eAEeYYvqqb1ArPsreygn38h3xSv0hzFKOEqUzTZ3qo4BC3RN2rHhv0ikNxinXd/F8FQCOXfGTogbHG6YK56PrF9n5zMh7hOiy4+qU6w02FNip2AwOo/GRZr9H/AOz7AbE3LAn7gAC3+qJnNUXFqDyAjwiyE/Vp4n1jqvRR+FVT4oR+Mny/BNRsjEEjiL23xJmiimpBDT3CTKZAg0ElWTNZYQyV8QlNGqVCFRRdiZSrYunTG1UcKOFzqfCYVDGnHYzC0ALUTiUut9XW+pPleJsorVowX2F+JwjWDqCDbtKRYj85EmbvTFjwHHfC/OcN1ZNUC6H7yw+yefhBjMsLTcEgBgeVpgnHa7MyxlvVzDxmdMSSYLZlmTMTrqeAlnN8GdshLhfOVsHlDuwVVLudwG+SikN3LHRWsKdfbqHZumyhP85IsPPWHS4swS6Q5cuGwFRTY1GdCzD+baGg8Bec6P8ASBayinUIWqBbXQVO8d/dNsOFZl1CtF+LDIYi+6JnmT19t0nTEXkzXYtF4x3ke1InaIBxecDyLajgYAOapMrPsaadCo6mzWshBsQTpeX3MFul9bsU05uT7h+cTKq0tsGwn6D522Jp1KbKCyIge4Gy4O1+t0UFeiOPOHw+PqqLsqUAntEsB638opXZHLTNwKY8KeUtqBylhAOUssdkvdCQRih30m+U1eni/c2F9H4eEzclrdXWRhpe498s9NsYUpU6zdoIWAGmrHd6SMuGc+s1CspPALYjClwBbc4O498yq+Ip0mQO4v1aFud/ATDxWY1a1+sqEgMbKLBR5CUONvMxbeblctT57ooKKnSamNEps1uZC/jKNfpJWY2QLTHO203x/CYuz+M6jC+vLfykiEtTUl2WcRWeodp2LHmWE2+glMtmWEHKoW38lJmAT58tAb+c3ugVbYzPCMToahXgNSpHqYihtvJ9AEXFjAXpTlT0PrKIvTY9tALlD3Dl6Q0xmKSkhdzZR7yeQmHh6r4j62+ybkKP5V5D5mRdNSXI4zcXdAZgcjrYqzuBSpfzsp2n9lePjum+mW06C7NPsi3aY2NR/E/KEi02ZUDHUCxMjbL03nWShTjH9FOrKX4eT/SE46umgN9p77uQ/MTz5V1hz9JGPSpiRTp/YpJYkWsznU/IQMUfq8byEWaWEzytTsC/WLybX475u4PpFTNtsGmeP8S/ryge9Rd17nkLmSL8gYXNENTOPdz0rDYunUXaRww42INp12nm9Gs6NtIxU8wxE18N0jqqQHAqDn9lv15R7jVDVxftwF951WlPAY1aybaXGtmBtcGW1jNUZJq6OOYGdLHvVReVO/vJ/CGVSCXSbL6jMtVBtDYswB1FidfjFJpZKNU7QsZmGxWxh61LjUq0T/pQPf4kRTPCMPtaE8J2QOWenU3lpTM+k2svKZM7pMjkEEcDpHdPq21gkN/tVkP+1pEDB/pjmG2KVEfwKxfxO74esUkYtbHxUgTpfacc2BHgf+JCTr4kx5JFTuII+GkjTW3cYHMLDi3wnNn4bo9v/qRltO8bogFfgPKWcDijSq0qy6lKqOvipBlVVv8AKOXUfrQwGe/YlTiwtQX2AewPnNrB4VURRYaCYPQjFirgKDjeEUN7S9k/EQnG6NvixEhxDhQDuF5kZ5i+rpt2tnsMXP8AIgGpmlmQ+rYcxaA30iYo0MHsFr1KzBb8dgat8h5xrAuzyXH4g1Kj1DptOTbx4SoRfT3x5OvpODj+rxMmMRANwt5COY8B4mImwueVz3RpOgPEi5gMkA/t+U4D6Tq7h4SIPYX5iIAq6JDs1df4108jCIGBvRCsRUqDg1O/mCPxML9qSWDraZ3poVRtIGZ1nFQVHpo2ygNjYC77r3O+F9Q6QYwxpCpibi9WxZCb2UW1HjrIywQ1XKSNPB9GFqPTqVG+rKBio0Lk627ha0UJMAQKaIDfYpou/XQcYpyataoptJnOnkzUOol5Zn0zqJfQ6TsHcJrwAx1c1KlRz/E2nhw9IcYg/VvrbsN6Tz4Hf5+6JnP1snwiOqNx/qlek1i47xJqrWI7/wApXqdmpfgW1gc8uu3D2pBbd3SQG/65zlvT5wA6P+Jxd/jF+hFx8YgPWPomxm1h69E70faA5KfzBnpCHQTxX6L8Z1eMamTYVKLDxYaj4Xns9HVV8I+hPJFmP2VHNxPGvpRzLrcZ1QN0ooF7ts6t8h5T1/OK60qfWNoqbTN4AEz5zzHFNVqVKjas7szd7E3MOgWSsBx4+kanPhfTvjmPDj/FInewFt5+z+MCQyrqQv8AV2u88p1zdvAAToWxXyvGJ9s+36RAS1WsB4SAjat/KN8fiCLgE6WjSSdBoIAavRt/3jTdsMBDEPAbJGIxFMjvHwMMwY0dTSPwt9j6j6GAVPMStZ6jjbuGDbr2/QEOntuJteecVAoZ1IJO3ZSLc4pFWslykE2W53W6+m1Omahemismo27X17uJv3xSKt+0YeptU0JqVFK0nC7Wl7EKOenuilLpxfNjDK9wppmWqTyhhKlxLQmg75zN8QEo1DxZdlfEwIq6doeBE3ekFcl1S+irc+J/4mO1tPERM4+rnunb4KdchgRx0jMWvH+qRVywNu+SsdqmDx0v4wMw/Dvcb90kHylXDNvEtk6nziARPwW84fh6RpPp+EV/dwgBrdHsb1GLw9W9gtZQ/snQ/AmfQ2Fa6r4T5lvp6z6C6I4/r8Jh6l7k0xt+0ND8QZJYFIyvpRxppYLZBs1R9ny3n4C3nPEmNtfdPSPpfx+1Xo0AdEpFn8WP4L8Z5m5/KIaOMbXudB9qQKdoljy0HIRlV9o7I+yN/eZMg/tEQxznj3SHDm9z3sZ3EPofZHyjaGik90AELF7ncJ1iToN3rG0RfXjHu4XvNtIAavR+mOuPNUJHduHzhQDBPoy562oTvNP5iE4aNHU0nFM5iaYqK1Mm11PHXygHXoGnW2GNyHFzqb98Ic1xVPrQlQGwQ2ZWO0hPH0mDhletXpoO2zVFUGx7Wu/3SDyZNTJSk/o9aydAaNPuv8SYpnZTiSKnVnehIsPHf6TsrUhxXBk4J7G02EMUUvR1ECmdPetUtu0A8gB+Mz1INxxFhFFA4db3l+lfEUw2g4NpI8MexY8DFFEQI6Ys9v6jLh5xRRgcPyjT6j4zsUQDlP5z1H6LM3C4epRbUpV0HJWF/W8UUlHIpYArplmP7RjcTUBuOtIU/wBC9kfAQYxNW3ZG87/6ROxRMaIqK290s39IoohlbFHcI62gHMgWnIoAT20A75ERf3mKKAjU6PfeP7HzEIWPGKKNHU0380BOOxXWVGfhfs+HCMwzVKDU6qHYa5KGw0iikWc+XLdw3yvFPUqJU7Ku1ME9gkbVtToRzMUUUpsaKD8T/9k="
             alt="Profile Picture" class="pfp">
 
-            <p><img src="./src/map-marker.png" style="width: 32px; height: auto;">&nbsp&nbsp&nbspPahang, Malaysia</p><br>
+          <p><img src="./src/map-marker.png" style="width: 32px; height: auto;">&nbsp&nbsp&nbspPahang, Malaysia</p><br>
 
-            <p><img src="./src/school-solid.svg" style="width: 32px; height: auto;">&nbsp&nbspMARA Junior Science College Gemencheh<br>(2019 - 2023)</p>
+          <p><img src="./src/school-solid.svg" style="width: 32px; height: auto;">&nbsp&nbspMARA Junior Science College
+            Gemencheh<br>(2019 - 2023)</p>
         </div>
         <div class="column">
-          
+
           <p>Hello! My name is <strong>Adi Ahmad Danish</strong></p><br>
 
-          <p>I am an aspiring student from <strong>MARA Junior Science College Gemencheh</strong>! I'm a Student Web Developer that loves challenging problems and finding solutions for them. 
-            Eager to strive further and learn new technologies, willing to accept advice and tips to improve.</p><br><br>
+          <p>I am an aspiring student from <strong>MARA Junior Science College Gemencheh</strong>! I'm a Student Web
+            Developer that loves challenging problems and finding solutions for them.
+            Eager to strive further and learn new technologies, willing to accept advice and tips to improve.</p>
+          <br><br>
 
           <p>I go by the username <strong>MagusWyvern</strong> on most sites</p>
         </div>
@@ -49,80 +52,31 @@
 
       <br><br>
 
-      <p>Here are some tools I am experienced with!</p>
+      <p>Here are some tools I have either used, or have at least some experience with:</p>
 
       <div class="grid-container">
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">6</div>
-        <div class="grid-item">7</div>
-        <div class="grid-item">8</div>
-        <div class="grid-item">9</div>
-        <div class="grid-item">7</div>
-        <div class="grid-item">8</div>
-        <div class="grid-item">9</div>
-        <div class="grid-item">7</div>
-        <div class="grid-item">8</div>
-      </div>
-
-      <div class="columns">
-        <div class="column">
-          <img width="26px" src="./src/vscode-original.png">
+        <div class="grid-item"><img width="26px" src="./src/vscode-original.png"></div>
+        <div class="grid-item"><img width="26px" src="./src/python-original.png"></div>
+        <div class="grid-item"><img width="26px" src="./src/vuejs-original.png"></div>
+        <div class="grid-item"><img width="26px" src="./src/react-original.png"></div>
+        <div class="grid-item"><img width="26px" src="./src/bulma-plain.png"></div>
+        <div class="grid-item"><img width="26px" src="./src/git-original.png"></div>
+        <div class="grid-item"><img width="26px" src="./src/jest-plain.png"></div>
+        <div class="grid-item"><img width="26px" src="./src/jupyter-original.png"></div>
+        <div class="grid-item"><img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg" width="26px" />
         </div>
-        <div class="column">
-          <img width="26px" src="./src/python-original.png">
+        <div class="grid-item"><img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" width="26px" />
         </div>
-        <div class="column">
-          <img width="26px" src="./src/vuejs-original.png">
-        </div>
-        <div class="column">
-          <img width="26px" src="./src/react-original.png">
-        </div>
-        <div class="column">
-          <img width="26px" src="./src/bulma-plain.png">
-        </div>
-      </div>
-
-      <div class="columns">
-
-        <div class="column"><img width="26px" src="./src/git-original.png"></div>
-        <div class="column"><img width="26px" src="./src/jest-plain.png"></div>
-        <div class="column"><img width="26px" src="./src/jupyter-original.png"></div>
-        <div class="column">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg" width="26px" />
-        </div>
-        <div class="column">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
-            width="26px" />
-        </div>
-      </div>
-
-      <div class="columns">
-        <div class="column">
-          <img width="26px" src="./src/nodejs-original.png">
-
-        </div>
-        <div class="column">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="26px" />
-
-        </div>
-        <div class="column">
-          <img width="26px" src="./src/html5-original.png">
-
-        </div>
-
-
-
-
-      </div>
-
-      <div class="columns">
-        <div class="column">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" width="26px" />
-        </div>
+        <div class="grid-item"><img width="26px" src="./src/nodejs-original.png"></div>
+        <div class="grid-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            width="26px" /></div>
+        <div class="grid-item"><img width="26px" src="./src/html5-original.png"></div>
+        <div class="grid-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg"
+            width="26px" /></div>
+        <div class="grid-item"><img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" width="26px" /></div>
       </div>
 
       <div class="columns">
@@ -274,13 +228,14 @@
     </section>
 
 
-    <a target="_blank" href="https://icons8.com/icon/8212/map-marker">Map Marker</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    <a target="_blank" href="https://icons8.com/icon/8212/map-marker">Map Marker</a> icon by <a target="_blank"
+      href="https://icons8.com">Icons8</a>
 
   </main>
 </body>
 
 
-  <script src="main.js" type="module"></script>
+<script src="main.js" type="module"></script>
 
 
 </html>
