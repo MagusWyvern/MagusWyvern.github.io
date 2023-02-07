@@ -50,7 +50,7 @@ main {
   width: 100%;
 
   color: white;
-  z-index: 99;
+  z-index: 1;
   position: absolute;
 
   margin: 0px auto;
