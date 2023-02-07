@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
 :root {
   --dark-bg: #162b4b;
   --spacing: 75px;
@@ -62,10 +64,20 @@ main {
   animation-duration: 2s;
 }
 
-h1, h2, h3, blockquote {
-  font-family: elevon, sans-serif;
+section h2 {
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 2em;
+  text-align: center;
+}
+
+section p {
+  text-align: center;
+}
+
+.box {
+  background-color: rgb(140, 192, 237);
 }
 
 .pfp {
