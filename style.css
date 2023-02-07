@@ -23,6 +23,10 @@ main {
   background-color: #091320;
 }
 
+main strong {
+  color: rgb(148, 229, 243);
+}
+
 :root a {
   text-decoration: none;
   font-style: italic;
@@ -129,4 +133,17 @@ h1, h2, h3, blockquote {
 @keyframes example {
   0%   {opacity: 0%;}
   100% {opacity: 100%;}
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 2em 15em 0px 15em;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
 }
