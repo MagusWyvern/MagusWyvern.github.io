@@ -11,10 +11,6 @@
   
 }
 
-main {
-  background-color: #091320;
-}
-
 main strong {
   color: rgb(148, 229, 243);
 }
@@ -49,8 +45,9 @@ main strong {
 main {
   width: 100%;
 
+  background-color: #091320;
   color: white;
-  z-index: 1;
+  z-index: 5;
   position: absolute;
 
   margin: 0px auto;
