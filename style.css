@@ -17,6 +17,7 @@
   color: #4640af;
 }
 
+
 .columns {
   display: flex;
   flex-direction: row;
@@ -54,9 +55,9 @@
 main {
   width: 100%;
 
-  background-color: #091320;
+  background-color: #000c1b;
   color: white;
-  z-index: 5;
+  /* z-index: 5; */
   position: absolute;
 
   margin: 0px auto;

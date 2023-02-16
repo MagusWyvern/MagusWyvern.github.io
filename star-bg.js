@@ -22,7 +22,7 @@ function init() {
     renderer.setSize(window.innerWidth, window.innerHeight);
 
     //add the renderer to the html document body
-    document.body.appendChild(renderer.domElement);
+    mainElement.appendChild(renderer.domElement);
 }
 
 
