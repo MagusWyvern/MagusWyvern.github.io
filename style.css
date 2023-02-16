@@ -1,31 +1,22 @@
-@import url("https://use.typekit.net/jmk3xov.css");
-
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-body {
-  background-color: #020024 !important;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
 :root {
-  --dark-bg: #19164b;
+  --dark-bg: #162b4b;
   --spacing: 75px;
 
   font-family: brandon-grotesque, sans-serif;
   font-weight: 100;
   font-style: normal;
-  
+  font-size: 12px
 }
 
 :root a {
   text-decoration: none;
   font-style: italic;
   /* padding-right: 2px; */
-  color: #655fdb;
+  color: #4640af;
 }
+
 
 .columns {
   display: flex;
@@ -33,25 +24,40 @@ body {
   justify-content: space-between;
 
   text-align: center;
+
+  padding: 10px;
 }
 
 .column {
   flex: 1;
-  padding: 0 var(--spacing);  
-
-
+  padding: 10px var(--spacing);
 }
 
 .column img {
   vertical-align: middle;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 2em 10em 0px 10em;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  font-size: 10px;
+  text-align: center;
+
+}
+
 
 main {
   width: 100%;
 
+  background-color: #000c1b;
   color: white;
-  z-index: 99;
+  /* z-index: 5; */
   position: absolute;
 
   margin: 0px auto;
@@ -65,10 +71,24 @@ main {
   animation-duration: 2s;
 }
 
-h1, h2, h3, blockquote {
-  font-family: elevon, sans-serif;
+main strong {
+  color: rgb(148, 229, 243);
+}
+
+section h2 {
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 2em;
+  text-align: center;
+}
+
+section p {
+  text-align: center;
+}
+
+.box {
+  background-color: rgb(140, 192, 237);
 }
 
 .pfp {
@@ -80,48 +100,52 @@ h1, h2, h3, blockquote {
   margin-bottom: 20px;
 }
 
-
-
-  header {
-    background: var(--dark-bg);
-    font-size: 1.5rem;
-    padding: 1rem;
-    margin-bottom: var(--spacing);
-    text-align: center;
-    border-radius: 10px;
-  }
-
-  section {
-    padding: 1rem;
-    background: var(--dark-bg);
-    font-size: 1.25rem;
-    line-height: 1.5;
-    margin-bottom: var(--spacing);
-    border-radius: 10px;
-  }
-
-  blockquote {
-    /* margin: 5px; */
-    /* padding: 10px; */
-    margin-bottom: var(--spacing);
-    border-radius: 10px;
-  }
-
-  blockquote p {
-    color: black;
-    background-color: white;
-    font-size: 2rem;
-    display: inline;
-    line-height: 1;
-  }
-
-  .left {
-    grid-column: 6 / 12;
-    border-radius: 10px;
-  }
-
-  /* The animation code */
-@keyframes example {
-  0%   {opacity: 0%;}
-  100% {opacity: 100%;}
+header {
+  background: var(--dark-bg);
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin-bottom: var(--spacing);
+  text-align: center;
+  border-radius: 10px;
 }
+
+section {
+  padding: 1rem;
+  background: var(--dark-bg);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+  border-radius: 10px;
+}
+
+blockquote {
+  /* margin: 5px; */
+  /* padding: 10px; */
+  margin-bottom: var(--spacing);
+  border-radius: 10px;
+}
+
+blockquote p {
+  color: black;
+  background-color: white;
+  font-size: 2rem;
+  display: inline;
+  line-height: 1;
+}
+
+.left {
+  grid-column: 6 / 12;
+  border-radius: 10px;
+}
+
+/* The animation code */
+@keyframes example {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
