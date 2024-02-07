@@ -1,7 +1,7 @@
 {
-  "name": "portfolio-netlify",
+  "name": "mw-portfolio",
   "version": "1.0.2",
-  "description": "Web Developer portfolio made using Vanilla JS and Bulma CSS",
+  "description": "A simple developer portfolio for MagusWyvern",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,9 +11,9 @@
     "url": "git+https://github.com/MagusWyvern/MagusWyvern.github.io.git"
   },
   "keywords": [
-    "bulma",
-    "js",
-    "netlify"
+    "portfolio",
+    "developer",
+    "web"
   ],
   "author": "MagusWyvern",
   "license": "ISC",
