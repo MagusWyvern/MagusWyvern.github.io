@@ -1,0 +1,29 @@
+{
+  "title": "Adi Ahmad Danish",
+  "subtitle": "Student Developer at MJSC Gemencheh — a young developer that enjoys solving fascinating problems and building things.",
+  "owner": {
+    "name": "Adi Ahmad Danish",
+    "email": "adi.ahmaddanish01@gmail.com"
+  },
+  "social": {
+    "github": "MagusWyvern",
+    "medium": "",
+    "twitter": "MagusWyvern"
+  },
+  "newsletter": {
+    "showTwitterBanner": false,
+    "currentCount": "0",
+    "revueUsername": ""
+  },
+  "seo": {
+    "title": "Adi Ahmad Danish",
+    "description": "Blog of a Student Developer",
+    "author": "Adi Ahmad Danish",
+    "keywords": [
+      "blog",
+      "developer blog",
+      "engineering blog"
+    ]
+  },
+  "cname": ""
+}
